@@ -1,0 +1,48 @@
+.home-group {
+  margin: 60px 20px;
+  display: flex;
+  flex-direction: column;
+}
+.repository-list {
+  overflow: hidden scroll;
+  height: calc(100vh - 300px);
+}
+
+.repo-container {
+
+  border: 0.5px #7777;
+  border-radius: 15px;
+  border-style: solid;
+  padding: 15px 0;
+
+}
+.repository-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.repository-item :hover {
+  background-color : rgba(119, 119, 119, 0.158);
+}
+.repository-link {
+  text-decoration: none;
+  padding: 5px 10px;
+  width: 100%;
+}
+button :hover{
+  display:none;
+}
+
+.page-title {
+  margin: 20px 0;
+}
+
+.new-repository {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.box {
+  width: fit-content;
+}
