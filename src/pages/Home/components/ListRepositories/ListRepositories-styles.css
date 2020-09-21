@@ -1,0 +1,30 @@
+.listContainer {
+
+    border: 0.5px #7777;
+    border-radius: 10px;
+    border-style: solid;
+    padding: 10px 0;
+
+}
+.repositoryItem {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.repositoryLink {
+    text-decoration: none;
+    padding: 5px 10px;
+    width: fit-content;
+    max-width: 90%;
+    overflow: hidden;
+
+}
+.deleteButton :hover {
+    background-color: red;
+    color: white;
+}
+.repositoryList {
+  overflow: hidden scroll;
+  height: calc(100vh - 300px);
+}

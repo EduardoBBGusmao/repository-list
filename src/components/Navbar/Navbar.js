@@ -5,11 +5,11 @@ export default function Navbar(props) {
   
   return (
     <header>
-      <div class="container">
-        <h1 class="logo">GitStudio</h1>
+      <div className="container">
+        <h1 className="logo">GitStudio</h1>
         <input type="checkbox" id="menu-bar"/>
-        <label class="fontawesome-align-justify" for="menu-bar"></label>
-        <nav class="menu">
+        <label className="fontawesome-align-justify" htmlFor="menu-bar"></label>
+        <nav className="menu">
           <a href="/">Home</a>
         </nav>
       </div>

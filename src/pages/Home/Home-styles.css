@@ -8,12 +8,12 @@
   height: calc(100vh - 300px);
 }
 
-.repo-container {
+.list-container {
 
   border: 0.5px #7777;
-  border-radius: 15px;
+  border-radius: 10px;
   border-style: solid;
-  padding: 15px 0;
+  padding: 10px 0;
 
 }
 .repository-item {
@@ -22,13 +22,13 @@
   justify-content: space-between;
 }
 
-.repository-item :hover {
-  background-color : rgba(119, 119, 119, 0.158);
-}
 .repository-link {
   text-decoration: none;
   padding: 5px 10px;
-  width: 100%;
+  width: fit-content;
+  max-width: 90%;
+  overflow: hidden;
+
 }
 button :hover{
   display:none;
@@ -44,5 +44,39 @@ button :hover{
   justify-content: flex-end;
 }
 .box {
+  margin: 10px;
   width: fit-content;
+  display: flex;
+}
+
+.delete-button :hover {
+  background-color: red;
+  color: white;
+}
+.create-button :hover {
+  background-color: rgba(158, 156, 156, 0.226);
+}
+
+.create-button {
+
+  border: 0.5px #7777;
+  border-radius: 5px;
+  border-style: solid;
+  margin-left: 5px;
+}
+
+
+.input-repository {
+  border: 0.5px #7777;
+  border-radius: 5px;
+  border-style: solid;
+  padding: 5px;
+  font-size: 15px;
+}
+
+.header-list {
+  text-align: end;
+  margin: 5px 15px;
+  font-size: 12px;
+  color: #777;
 }

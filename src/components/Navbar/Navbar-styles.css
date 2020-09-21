@@ -43,35 +43,8 @@ header .container {
 	display: table;
 }
 
-section {
-	width: 100%;
-	margin-bottom: 25px;
-}
-
-#bienvenidos {
-	text-align: center;
-}
-
-footer .container {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	padding-bottom: 25px;
-}
-
 .copy {
 	font-size: 20px;
-}
-
-.sociales {
-	width: 100%;
-	text-align: center;
-	font-size: 28px;
-}
-
-.sociales a {
-	color: #333;
-	text-decoration: none;
 }
 
 
@@ -79,23 +52,6 @@ footer .container {
 	.container {
 		width: 1000px;
 	}
-}
-@media (min-width:768px) { 
-	#banner {
-		height: 300px;
-		overflow: hidden;
-	}
-	
-	#banner img {
-		height: auto;
-		margin-top: -100px;
-	}
-}
-
-#info .container {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
 }
 
 #menu-bar {
@@ -118,6 +74,7 @@ header label {
 	background: rgba(51,51,51,0.9);
 	transition: all 0.5s;
 	transform: translateX(-100%);
+	margin-right: 30px;
 }
 
 .menu a {

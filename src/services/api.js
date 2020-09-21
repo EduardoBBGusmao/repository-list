@@ -27,9 +27,13 @@ const api = (function () {
       console.log(data[data.length - 1]);
       return new Promise((resolve, reject) => {
         if (entity) {
-          entity.id = data[data.length - 1].id + 1;
+          if(data.length > 0){
+            entity.id = data[data.length - 1].id + 1;
+          } else {
+            entity.id = 1;
+          }
           data.push(entity);
-        }else{
+        } else {
           reject("Can't insert data");
         }
         resolve(data[data.length - 1]);

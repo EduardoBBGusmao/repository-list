@@ -6,11 +6,9 @@ import "./styles.css";
 function App() {
 
   return (
-    <div class="container">
+    <div className="container">
       <Navbar/>
-      <div class="main-container">
-        <Home/>
-      </div>
+      <Home/>
     </div>
   );
 }

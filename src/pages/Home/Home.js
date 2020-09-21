@@ -11,18 +11,22 @@ function Home() {
   useEffect(() => {
     api.get().then(response => {
       setRepositoriesList(response);
-      console.log("response", response)
     });
   }, [refreshKey]);
 
   return (
-    <div class="home-group">
-      <h2 class="page-title">Repositories</h2>
+    <div className="home-group">
+      <h2 className="page-title">Repositories</h2>
+      <p className="header-list">{repositoriesList.length} repositories</p>
       <ListRepositories 
             repositoriesList={repositoriesList} 
-            refreshKeyState={[refreshKey, setRefreshKey]}
+            refreshKey={refreshKey}
+            setRefreshKey={setRefreshKey}
             /> 
-      <NewRepositoryForm refreshKeyState={[refreshKey, setRefreshKey]}/>
+      <NewRepositoryForm 
+            refreshKey={refreshKey}
+            setRefreshKey={setRefreshKey}
+            />
     </div>
   );
 }
